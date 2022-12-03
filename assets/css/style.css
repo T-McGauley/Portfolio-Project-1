@@ -1,9 +1,12 @@
-
+/*background*/
+body {
+    background-color:bisque;
+  }
 /*headings and logo*/
-h1, h2 {font-family: 'Times New Roman', Times, serif;
+h1, h2 {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: capitalize;
     letter-spacing: 2.5px;
-    color: #252525;}
+    color: #534e45;}
 #logo{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     float: left;
     font-size: 300%;
@@ -11,16 +14,28 @@ h1, h2 {font-family: 'Times New Roman', Times, serif;
     margin-top: auto;
     }
     
-    /* navigation links */
-#menu {font-size: 110%;
-    letter-spacing: 4px;}
+    /* navigation */
+#menu {font-size: 150%;
+    letter-spacing: 3px;}
 #menu , #logo {line-height: 90px;
     }
 #menu li {float: right;
-    list-style: none;
-    margin-right: 30px;}
-#menu a {text-decoration: none;
+    list-style:none;
+    margin-right: 25px;}
+#menu a {text-decoration:none;
     color: inherit;}
     
 #menu a:hover {border-bottom:1px solid #3a3a3a;}
     .active{border-bottom: 1px solid#3a3a3a;}
+
+    /* hero image */
+#hero-outer {height: 950px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;}
+    
+    
+    #hero-image {height: 100%;
+    width: 100%;
+    background:url('../images/catmosphere-interior-hero-image.jpg')
+    no-repeat center center;}
