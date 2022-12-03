@@ -1,1 +1,13 @@
-body {font-size: 20px;}
+
+/*headings and logo*/
+h1, h2 {font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    color: #252525;}
+#logo{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+    font-size: 280%;
+    margin-left: 30px;
+    }
+    
+    
