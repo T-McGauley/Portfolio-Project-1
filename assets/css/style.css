@@ -1,17 +1,19 @@
-/*background*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Teko&display=swap');
+/* background */
 body {
     background-color:bisque;
   }
-/*headings and logo*/
-h1, h2 {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* headings and logo */
+h1, h2 {font-family:'teko', 'Arial Narrow', Arial, sans-serif;
     text-transform: capitalize;
     letter-spacing: 2.5px;
     color: #534e45;}
-#logo{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#logo{ font-family: 'fredoka one', 'Arial Narrow', Arial, sans-serif;
     float: left;
-    font-size: 300%;
+    font-size: 550%;
     margin-left: 35px;
     margin-top: auto;
+    letter-spacing: 0px;
     }
     
     /* navigation */
@@ -21,7 +23,7 @@ h1, h2 {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 #menu li {float: right;
     list-style:none;
-    margin-right: 25px;}
+    margin-right: 20px;}
 #menu a {text-decoration:none;
     color: inherit;}
     
@@ -29,13 +31,11 @@ h1, h2 {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     .active{border-bottom: 1px solid#3a3a3a;}
 
     /* hero image */
-#hero-outer {height: 950px;
+#hero-outer {height: 870px;
     width: 100%;
     overflow: hidden;
-    position: relative;}
-    
-    
-    #hero-image {height: 100%;
+    position: relative;}    
+#hero-image {height: 100%;
     width: 100%;
     background:url('../images/catmosphere-interior-hero-image.jpg')
-    no-repeat center center;}
+    no-repeat center center}
