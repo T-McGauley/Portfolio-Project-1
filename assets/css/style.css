@@ -32,16 +32,17 @@ h2{font-family:'fredoka one', 'Arial Narrow', Arial, sans-serif;color: #534e45 ;
     .active{border-bottom: 1px solid#3a3a3a;}
 
     /* hero image */
-#hero-outer {height: 600px;
+#hero-outer {height: 60vh;
     width: 100%;
     overflow: hidden;
     position: relative;}    
 #hero-image {height: 100%;
     width: 100%;
-    background:url('../images/beans.jpg')
+    background:url('../images/cafe-interior.jpg')
     no-repeat center center }
+    
 
-    /* about us section*/
+/* about us section*/
 hr{border-top: 1px solid #3a3a3a;
     width: 100%;
     margin: 3px 0;}
@@ -52,14 +53,23 @@ p {font-family:'fredoka', 'Arial Narrow', Arial, sans-serif;
     color: #3a3a3a;}
 section>h2{float:left 50%;}
 
-/*menu picture and text*/
-#content .col {
-    float: left;
-  }
-  
-  #footer {
-    clear: left;
-  }
+/*menu image and text*/
+#menu-content{display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;  
+  height: 1000px;
+}
+.item-1{
+  background-image: url('../images/pexels-marta-dzedyshko-7451857.jpg');
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+
+
 
 /* social links*/
 .social-networks {text-align: center;}
@@ -69,3 +79,66 @@ section>h2{float:left 50%;}
     padding:5%;
     color: #ffffff}
 footer{background-image:url('../images/beans.jpg');}  
+
+/*booking form*/
+form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  
+  div.elem-group {
+    margin: 20px 0;
+  }
+  
+  div.elem-group.inlined {
+    width: 49%;
+    display: inline-block;
+    float: left;
+    margin-left: 1%;
+  }
+  
+  label {
+    display: block;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 10px;
+    font-size: 1.25em;
+  }
+  
+  input, select, textarea {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    width: 100%;
+    padding: 10px;
+  }
+  
+  div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+  }
+  
+  textarea {
+    height: 250px;
+  }
+  
+  hr>form {
+    border: 1px dotted #ccc;
+  }
+  
+  button {
+    height: 50px;
+    background: rgb(27, 109, 79);
+    border: none;
+    color: white;
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    border: 2px solid black;
+  }

@@ -28,40 +28,58 @@
     <section id="hero-outer">
         <div id="hero-image"></div>
         <div id="cover-text">
-        
-    </section>
-    <section id="about-us">
-        <div id="left-about">
-            <div class="what-we-do">
-                <h2>What we do</h2>
-                <hr>
-            <p>We are a small charity cat cafe based in Dublin, serving coffee and baked goodies. We also host hangout sessions with the current kitty residences, you can book in to make a reservation. All profits go towards helping strays get back to good health and find forever homes </p>
-        </div>
-        <div class="left-about-heading">
-            <h2>Meet the Cats </h2>
-            <hr>
-        <p>place holder for mozaic of cat photos.</p>
-    </div>
-        </div>
-        <div id="right-about">
-            <div class="right-about-heading">
-                <h2>Menu</h2>
-                <hr>
-                <p>Place holder for menu </p>
-            </div>
-            <div class="right-about-heading">
-                <h2>Book In</h2>
-                <hr>
-                <p>placeholder for book in button link</p>
-            </div>
-        </div>
-        
-        
+        </section>
 
+    <form action="reservation.php" method="post">
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email" name="visitor_email" placeholder="meow@email.com" required>
+        </div>
+        <div class="elem-group">
+          <label for="phone">Your Phone Number</label>
+          <input type="tel" id="phone" name="visitor_phone" placeholder="083-123-4567" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        </div>
+        <hr>
+        <div class="elem-group inlined">
+          <label for="adult">Adults</label>
+          <input type="number" id="adult" name="total_adults" placeholder="0" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="child">Children</label>
+          <input type="number" id="child" name="total_children" placeholder="0" min="0" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkin-date">Booking Date</label>
+          <input type="date" id="booking-date" name="checkin" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkout-date">Booking Time</label>
+          <input type="time" id="booking-time" name="time" required>
+        </div>
+        <div class="elem-group">
+          <label for="cat-selection">Select Cat Preference</label>
+          <select id="cat-selection" name="cat_preference" required>
+              <option value="">Choose a cat from the List</option>
+              <option value="cat1">cat1</option>
+              <option value="cat2">cat2</option>
+              <option value="cat3">cat3</option>
+          </select>
+        </div>
+        <hr>
+        <div class="elem-group">
+          <label for="message">Additional comments</label>
+          <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important such as allergies or if someone may be nervous around cats." required></textarea>
+        </div>
+        <button type="submit">Confirm Booking</button>
+      </form>
 </header>
 
 </section>
-</body>
+
 <footer>
     <ul class="social-networks"> 
         <li>    
@@ -83,4 +101,5 @@
 
     </ul>
 </footer>
+</body>
 </html>
