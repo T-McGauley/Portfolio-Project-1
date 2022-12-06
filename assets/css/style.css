@@ -53,23 +53,68 @@ p {font-family:'fredoka', 'Arial Narrow', Arial, sans-serif;
     color: #3a3a3a;}
 section>h2{float:left 50%;}
 
-/*menu image and text*/
-#menu-content{display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-between;  
-  height: 1000px;
-}
-.item-1{
-  background-image: url('../images/pexels-marta-dzedyshko-7451857.jpg');
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
+/*menu*/
+.text-center {
   text-align: center;
 }
+.menu-section {
+  
+  background-size:cover;
+  min-height:100vh;
+  padding-bottom: 50px;
+}
 
+.menu-title {
+  padding: 50px 0px 50px 0px;
+  font-size: 3rem;
+  color: rgb(62, 55, 55);
+}
 
+.menu-split {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 60%;
+  height: auto;
+  margin: auto;
+  padding: 25px 50px 25px 50px;
+  background-color: rgba(0, 0, 0, 0.366);
+  color: white;
+  border: 6px solid rgb(74, 31, 31);
+ 
+}
 
+.menu-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 15px;
+}
+
+.menu-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.menu-left>h3, .menu-right>h3,
+.menu-left>p, .menu-right>p {
+  padding-top: 15px;
+}
+
+.menu-left>h3, .menu-right>h3 {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.menu-left>p, .menu-right>p {
+  font-family: 'Noto', sans-serif;
+}
+
+.menu-hr {
+  width: 100%;
+  border: 1px solid rgb(81, 84, 84);
+}
 
 /* social links*/
 .social-networks {text-align: center;}
