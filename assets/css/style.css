@@ -52,15 +52,62 @@ p {font-family:'fredoka', 'Arial Narrow', Arial, sans-serif;
     font-size:300% ;
     color: #3a3a3a;}
 section>h2{float:left 50%;}
+#about-us{padding-left: 100px;
+padding-right: 100px;
+padding-bottom: 50px;
+padding-top: 50px;}
+#what-we-do{border-style: dotted;
+border-color: dimgray;}
 
-/*menu*/
+/*Gallery*/
+
+body {
+	margin: 0;
+}
+
+.image-grid {
+	--gap: 16px;
+	--num-cols: 4;
+	--row-height: 300px;
+
+	box-sizing: border-box;
+	padding: var(--gap);
+
+	display: grid;
+	grid-template-columns: repeat(var(--num-cols), 1fr);
+	grid-auto-rows: var(--row-height);
+	gap: var(--gap);
+}
+
+.image-grid>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.image-grid-col-2 {
+	grid-column: span 2;
+}
+
+.image-grid-row-2 {
+	grid-row: span 2;
+}
+
+/* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+	.image-grid {
+		--num-cols: 2;
+		--row-height: 200px;
+	}}
+
+/*cafe menu*/
 .text-center {
   text-align: center;
 }
 .menu-section {
   
   background-size:cover;
-  min-height:100vh;
+  min-height:50vh;
   padding-bottom: 50px;
 }
 
@@ -109,11 +156,6 @@ section>h2{float:left 50%;}
 
 .menu-left>p, .menu-right>p {
   font-family: 'Noto', sans-serif;
-}
-
-.menu-hr {
-  width: 100%;
-  border: 1px solid rgb(81, 84, 84);
 }
 
 /* social links*/
