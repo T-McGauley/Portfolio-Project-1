@@ -40,13 +40,24 @@ h2{font-family:'fredoka one', 'Arial Narrow', Arial, sans-serif;color: #534e45 ;
     width: 100%;
     background:url('../images/cafe-interior.jpg')
     no-repeat center center }
-    
+#hero-image-gallery {height: 100%;
+      width: 100%;
+      background:url('../images/gallery-hero.jpg')
+      no-repeat center center }  
+#hero-image-menu {height: 100%;
+  width: 100%;
+  background:url('../images/beans.jpg')
+  no-repeat center center }  
+#hero-image-book-in {height: 100%;
+      width: 100%;
+      background:url('../images/cat-8.jpg')
+      no-repeat center center }  
 
 /* about us section*/
 hr{border-top: 1px solid #3a3a3a;
     width: 100%;
     margin: 3px 0;}
-div>h2{font-size: 445%;
+div>h2{font-size: 10rem;
     float: left;}
 p {font-family:'fredoka', 'Arial Narrow', Arial, sans-serif;
     font-size:300% ;
@@ -56,49 +67,16 @@ section>h2{float:left 50%;}
 padding-right: 100px;
 padding-bottom: 50px;
 padding-top: 50px;}
-#what-we-do{border-style: dotted;
-border-color: dimgray;}
 
-/*Gallery*/
 
-body {
-	margin: 0;
+/*Gallery photos*/
+
+#photos { clear:both;
+  line-height: 0;
+  column-count: 4;
+  column-gap: 0;
 }
-
-.image-grid {
-	--gap: 16px;
-	--num-cols: 4;
-	--row-height: 300px;
-
-	box-sizing: border-box;
-	padding: var(--gap);
-
-	display: grid;
-	grid-template-columns: repeat(var(--num-cols), 1fr);
-	grid-auto-rows: var(--row-height);
-	gap: var(--gap);
-}
-
-.image-grid>img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.image-grid-col-2 {
-	grid-column: span 2;
-}
-
-.image-grid-row-2 {
-	grid-row: span 2;
-}
-
-/* Anything udner 1024px */
-@media screen and (max-width: 1024px) {
-	.image-grid {
-		--num-cols: 2;
-		--row-height: 200px;
-	}}
+#photos >img {width: 100%;}
 
 /*cafe menu*/
 .text-center {
@@ -113,7 +91,7 @@ body {
 
 .menu-title {
   padding: 50px 0px 50px 0px;
-  font-size: 3rem;
+  font-size: 10rem;
   color: rgb(62, 55, 55);
 }
 
