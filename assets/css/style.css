@@ -6,14 +6,14 @@ body {
 /* headings and logo */
 #logo{ font-family: 'fredoka one', 'Arial Narrow', Arial, sans-serif;
     float: left;
-    font-size: 545%;
+    font-size: 3rem;
     margin-left: 35px;
     margin-top: auto;
     letter-spacing: 0px;
     color: #534e45;}
     
     /* navigation */
-#menu {font-size: 150%;
+#menu {font-size: 0.8rem;
     letter-spacing: 3px;
     height: 25px;}
 #menu , #logo {line-height: 90px;
@@ -56,7 +56,7 @@ hr{border-top: 1px solid #00000041;
     width: 100%;
     margin: 3px 0;
   }
-div>h2{font-size: 8rem;
+div>h2{font-size: 4rem;
     float: left;}
 p {font-family:'fredoka', 'Arial Narrow', Arial, sans-serif;
     font-size:300% ;
@@ -133,7 +133,7 @@ padding-top: 50px;}
   font-family: 'Noto', sans-serif;
 }
 
-/* social links footer*/
+/* social links & footer*/
 .social-networks {text-align: center;}
     .social-networks > li {display: inline;}
     .social-networks i {font-size: 360%;   
@@ -147,7 +147,8 @@ padding-top: 50px;}
     padding:5%;
     color: #534e45;
     }
-footer{background-image:url('../images/beans.jpg');}  
+footer{background-image:url('../images/beans.jpg');
+}  
 
 /*booking form*/
 /*Code from https://codepen.io/ and modified*/
@@ -230,15 +231,12 @@ form {
       margin-left: 30px; 
       margin-bottom: 20px; 
       line-height: 25px;}
-  #about-us {
-      width: 90; 
-      height: 1000px; 
-      margin: 0 auto;}
+  
   
   #photos {
       column-count: 3;}
   }
-  footer{float:bottom;}
+  
   
   /* small screen size */
   @media screen and (max-width:800px) {
@@ -246,13 +244,24 @@ form {
           column-count: 2;}
      
       p{text-align:centre;}
-       
-
-      }
-  
+       }
+  @media screen and (max-device-width: 480px)
+       and (orientation: portrait) {
+         .gfg-div {
+           width: 200px;
+           height: 200px;}
+           }
+  @media screen and (min-device-width: 320px)
+           and (-webkit-min-device-pixel-ratio: 2) {
+             .gfg-div {
+               width: 400px;
+               height: 400px;
+               
+             }
+           }
       /* flex*/
-     /* #menu{
+      #menu{
         justify-content:center;}
       #footer{
         justify-content:center;
-      }*/
+      }
