@@ -13,14 +13,14 @@ body {
     color: #534e45;}
     
     /* navigation */
-#menu {font-size: 0.8rem;
+#menu {font-size: 0.5rem;
     letter-spacing: 3px;
     height: 25px;}
 #menu , #logo {line-height: 90px;
     }
 #menu li {float: right;
     list-style:none;
-    margin-right: 30px;}
+    margin-right: 20px;}
 #menu a {text-decoration:none;
     color: inherit;}
 h2{font-family:'fredoka one', 'Arial Narrow', Arial, sans-serif;color: #534e45 ; text-transform: uppercase;}
@@ -29,10 +29,11 @@ h2{font-family:'fredoka one', 'Arial Narrow', Arial, sans-serif;color: #534e45 ;
     .active{border-bottom: 1px solid#3a3a3a;}
 
     /* hero images */
-#hero-outer {height: 60vh;
+#hero-outer {height: 50vh;
+  max-width: 100vw;
     width: 100%;
     overflow: hidden;
-    position: relative;}    
+    position: ;}    
 #hero-image {height: 100%;
     width: 100%;
     background:url('../images/sleeping-cat-hero.jpg')
@@ -88,7 +89,7 @@ padding-top: 50px;}
 
 .menu-title {
   padding: 50px 0px 50px 0px;
-  font-size: 10rem;
+  font-size: 5rem;
   color: rgb(62, 55, 55);
 }
 
@@ -125,12 +126,13 @@ padding-top: 50px;}
 }
 
 .menu-left>h3, .menu-right>h3 {
-  font-size: 2rem;
+  font-size: 1rem;
   text-decoration: underline;
 }
 
 .menu-left>p, .menu-right>p {
   font-family: 'Noto', sans-serif;
+  font-size:2rem;
 }
 
 /* social links & footer*/
@@ -153,9 +155,9 @@ footer{background-image:url('../images/beans.jpg');
 /*booking form*/
 /*Code from https://codepen.io/ and modified*/
 form {
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 20px;
   }
   
   div.elem-group {
@@ -245,19 +247,41 @@ form {
      
       p{text-align:centre;}
        }
+  @media screen and (min-device-width: 560px)
+        {
+         .form {
+           width: 400px;
+           height: 400px;}}
+           
   @media screen and (max-device-width: 480px)
        and (orientation: portrait) {
          .gfg-div {
            width: 200px;
-           height: 200px;}
+           height: 200px;
+          }
+          .form {
+            width: 400px;
+            height: 400px;}
            }
+           #menu{font-size: 0.5rem;}
+  @media screen and (max-device-width: 414px)
+           and (orientation: portrait) {
+             .gfg-div {
+               width: 150px;
+               height: 150px;}
+               .form {
+                width: 400px;
+                height: 400px;}
+               }
+               #menu{font-size: 0.5rem;}
   @media screen and (min-device-width: 320px)
            and (-webkit-min-device-pixel-ratio: 2) {
              .gfg-div {
                width: 400px;
-               height: 400px;
-               
-             }
+               height: 400px;}
+               .form {
+                width: 300px;
+                height: 400px;}
            }
       /* flex*/
       #menu{
