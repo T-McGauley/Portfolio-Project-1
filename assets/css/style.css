@@ -4,16 +4,13 @@ body {
     background-color:bisque;
   }
 /* headings and logo */
-
 #logo{ font-family: 'fredoka one', 'Arial Narrow', Arial, sans-serif;
     float: left;
-    font-size: 550%;
+    font-size: 545%;
     margin-left: 35px;
     margin-top: auto;
     letter-spacing: 0px;
-    color: #534e45;
-    
-    }
+    color: #534e45;}
     
     /* navigation */
 #menu {font-size: 150%;
@@ -31,14 +28,14 @@ h2{font-family:'fredoka one', 'Arial Narrow', Arial, sans-serif;color: #534e45 ;
 #menu a:hover {border-bottom:1px solid #3a3a3a;}
     .active{border-bottom: 1px solid#3a3a3a;}
 
-    /* hero image */
+    /* hero images */
 #hero-outer {height: 60vh;
     width: 100%;
     overflow: hidden;
     position: relative;}    
 #hero-image {height: 100%;
     width: 100%;
-    background:url('../images/index-hero.jpg')
+    background:url('../images/sleeping-cat-hero.jpg')
     no-repeat center center }
 #hero-image-gallery {height: 100%;
       width: 100%;
@@ -48,7 +45,8 @@ h2{font-family:'fredoka one', 'Arial Narrow', Arial, sans-serif;color: #534e45 ;
   width: 100%;
   background:url('../images/beans.jpg')
   no-repeat center center }  
-#hero-image-book-in {height: 100%;
+#hero-image-book-in {
+      height: 100%;
       width: 100%;
       background:url('../images/book-hero.jpg')
       no-repeat center center }  
@@ -69,9 +67,7 @@ padding-right: 100px;
 padding-bottom: 50px;
 padding-top: 50px;}
 
-
 /*Gallery photos*/
-
 #photos { clear:both;
   line-height: 0;
   column-count: 4;
@@ -80,7 +76,6 @@ padding-top: 50px;}
 #photos >img {width: 100%;}
 
 /*cafe menu*/
-
 .text-center {
   text-align: center;
 }
@@ -109,7 +104,6 @@ padding-top: 50px;}
   color: white;
   border: 6px solid rgb(174, 174, 174);
   border-radius: 25px;
- 
 }
 
 .menu-left {
@@ -139,7 +133,7 @@ padding-top: 50px;}
   font-family: 'Noto', sans-serif;
 }
 
-/* social links*/
+/* social links footer*/
 .social-networks {text-align: center;}
     .social-networks > li {display: inline;}
     .social-networks i {font-size: 360%;   
@@ -156,6 +150,7 @@ padding-top: 50px;}
 footer{background-image:url('../images/beans.jpg');}  
 
 /*booking form*/
+/*Code from https://codepen.io/ and modified*/
 form {
     width: 500px;
     margin: 0 auto;
@@ -175,7 +170,7 @@ form {
   
   label {
     display: block;
-    font-family: 'Nanum Gothic';
+    font-family:'fredoka', 'Arial Narrow', Arial, sans-serif;
     padding-bottom: 10px;
     font-size: 1.25em;
   }
@@ -185,7 +180,7 @@ form {
     border: 2px solid #777;
     box-sizing: border-box;
     font-size: 1.25em;
-    font-family: 'Nanum Gothic';
+    font-family: 'fredoka', 'Arial Narrow', Arial, sans-serif;
     width: 100%;
     padding: 10px;
   }
@@ -209,7 +204,7 @@ form {
     border: none;
     color: white;
     font-size: 1.25em;
-    font-family: 'Nanum Gothic';
+    font-family: 'fredoka', 'Arial Narrow', Arial, sans-serif;
     border-radius: 4px;
     cursor: pointer;
   }
@@ -217,3 +212,47 @@ form {
   button:hover {
     border: 2px solid black;
   }
+   /* media queries*/
+    /* for larger to med size screens 1200px wide and down */
+    @media screen and (max-width:1200px) {
+    .body{padding: 20px; margin: 0;}
+    #menu{padding: 20px; margin: 0;
+  }
+    
+    hr {display: none;}
+  }
+  /* for medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+
+  #menu {
+      clear: left;
+      float: left;
+      margin-left: 30px; 
+      margin-bottom: 20px; 
+      line-height: 25px;}
+  #about-us {
+      width: 90; 
+      height: 1000px; 
+      margin: 0 auto;}
+  
+  #photos {
+      column-count: 3;}
+  }
+  footer{float:bottom;}
+  
+  /* small screen size */
+  @media screen and (max-width:800px) {
+      #photos {
+          column-count: 2;}
+     
+      p{text-align:centre;}
+       
+
+      }
+  
+      /* flex*/
+     /* #menu{
+        justify-content:center;}
+      #footer{
+        justify-content:center;
+      }*/
