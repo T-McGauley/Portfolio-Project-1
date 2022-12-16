@@ -145,9 +145,9 @@ padding-top: 50px;}
     margin: 1%;
     padding:5%;
     color: #ffffff}
-    .social-network {text-align: center;}
-    .social-network > li {display: inline;}
-    .social-network i {font-size: 360%;   
+.social-network {text-align: center;}
+.social-network > li {display: inline;}
+.social-network i {font-size: 360%;   
     margin: 1%;
     padding:5%;
     color: #534e45;
@@ -170,7 +170,7 @@ form {
   div.elem-group.inlined {
     width: 49%;
     display: inline-block;
-    float: left;
+    float:left;
     margin-left: 1%;
   }
   
@@ -221,8 +221,8 @@ form {
    /* media queries*/
     /* for larger to med size screens 1200px wide and down */
     @media screen and (max-width:1200px) {
-    .body{padding: 20px; margin: 0;}
-    #menu{padding: 20px; margin: 0;
+  .body{padding: 20px; margin: 0;}
+  #menu{padding: 20px; margin: 0;
   }
     
     
