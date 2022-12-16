@@ -1,108 +1,243 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Portfolio Project 1
 
-Welcome T-McGauley,
+A brief description of what this project does and who it's for
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# Catmosphere 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+ 
 
-## Gitpod Reminders
+This site is intended to display the establishment of Catmosphere cat café, what goods and services they provide and how to contact the business. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+ 
 
-`python3 -m http.server`
+Catmosphere is a fictional café based in Dublin, Ireland.  
+The premises provides a foster home for rescued cats and kittens while also serving food and drinks to generate income to fully support the animals welfare. 
+The website is a way to connect to possible guests to see what the café is all about and to book a meeting with the cats while also supporting animal protection charities and educating people on the subject of animal welfare. 
 
-A blue button should appear to click: _Make Public_,
+ 
 
-Another blue button should appear to click: _Open Browser_.
+![Responsive Mockup](assets/images/responsive-mockup.JPG)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+ 
 
-A blue button should appear to click: _Make Public_,
+## Features  
 
-Another blue button should appear to click: _Open Browser_.
+ 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The site is broken into 4 main pages being Home, Gallery, Menu and Book in. 
 
-To log into the Heroku toolbelt CLI:
+Home – This page holds a brief introduction and a house rules section, explaining how guests should prepare before arriving to Catmosphere. 
+There is also two call to action sections; Menu and Book in. Clicking on these sections brings the user to the respected page. 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+ 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+ 
 
-------
+Gallery – This page includes a collage of images showing the interior of the café, the inhabitants and some of the products available. 
 
-## Release History
+ 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+Menu– This page displays the available products and the prices.  
+ 
+Book -In – This page includes a form to complete and secure a booking by adding in the customers details, party size, time and date, preference in cat and additional comments. 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+ 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Navbar and Footer 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+ 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- __Navigation Bar__ 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+ 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- The navigation bar features the site logo which brings the user back to the home page, the page title and links to the Home, Gallery, Menu and Book In page.  
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- The color scheme was chosen to be as calming as possible and not too bright. 
+I believe the cream background compliments the burnt umber text coloring nicely and hints towards the cream of a coffee or a cappuccino . 
+The font “fredoka one” was taken from google fonts and was selected because it looked comfortable and friendly. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+ 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![Nav Bar](assets/images/nav-bar.JPG)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+ 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- __Footer__ 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+ 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- The footer includes the social media links in the form of logos from fontawesome.com, with a background of coffee beans to suggest that the contents of the social media links will include more café insight. The style of the footer appeared neat so I did not add anything further, although I would like to include a more intricate footer in future projects. 
+ 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+ 
 
-------
+![Footer](assets/images/footer.JPG)
 
-## FAQ about the uptime script
+ 
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+ 
+ 
+ 
 
-**How will this affect me?**
+ 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+ 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+ 
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+ 
 
-**Can I opt out?**
+ 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Home Page
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+- __Home Page Hero image__ 
 
-**Anything more?**
+ ![Hero Image](assets/images/home-hero-image.JPG)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- The home page uses a hero image at the head of it to show that the page is directed towards the main reason the café exists, cats. 
 
----
 
-Happy coding!
+- __Contact/ About us Section__  
+
+ ![Home Page](assets/images/home-page-about-us.JPG)
+
+- The contact section is  minimal on the home page. It gives a short amount of information along with social media links. 
+
+ 
+
+ 
+
+- __House rules Section__ 
+
+- The house rules section found on the home page includes a few café rules that must be adhered to during the guests' stay at the café.  
+
+ 
+
+- __Menu Section__ 
+
+- This section includes a link to the menu page 
+
+
+
+- __Book In Section__ 
+
+- This section includes a link to the book in page 
+
+![Home Content](assets/images/home-page-content.JPG)
+
+
+
+
+## Gallery Page
+
+- __Gallery Page Hero image__ 
+
+![Gallery Hero Image](assets/images/gallery-hero-image.JPG)
+
+ 
+- The gallery page uses a hero image at the head of it to show that the page is directed towards showing the interior of the café and guests, followed by the collage gallery showing more of the pre mentioned topics. 
+
+
+-This page includes a photo collage spanning the entire page, the images used have alt descriptions included.
+
+![Gallery Collage](assets/images/gallery-page-collage.JPG)
+
+
+## Menu Page
+
+- __Menu Page Hero image__ 
+
+![Menu Hero Image](assets/images/menu-hero-image.JPG)
+
+- The menu page uses a hero image at the head of it to show that the page is directed towards the food and drinks served in the café. This image of coffee beans is the same as the footer background image. 
+- The design was to be as simple as possible to allow the layout to remain consistant at smaller screen sizes.
+
+![Menu Content](assets/images/menu-page-content.JPG)
+
+## Book In Page  
+
+- __Book In Page Hero image__ 
+
+![Book In Hero Image](assets/images/book-in-hero-image.JPG)
+
+- The home page uses a hero image at the head of it to show that the page is directed towards making a booking within the café. 
+- This page includes a booking form where customers can book a time and date to visit the cafe. The form code is credited in the credits section below.
+
+![Book In Content](assets/images/book-in-page-content.JPG)
+## Testing  
+
+__Internal Links__ 
+
+- The page links are both in the navbar of the page but also featured in the home page sections dividing the page.  
+
+- The navbar links are tested page to page to ensure each is directing to the correct page. 
+
+### Validator Testing  
+ During testing there were minor issues found in both the html and css which have now been resolved. 
+
+HTML 
+- Previous versions of the site included an embedded google map, this repeatedly failed validation and as a result the map was removed from the final version of the site.
+- No errors were returned when passing through the official [W3C validator]
+-validator results = https://validator.w3.org/nu/?doc=https%3A%2F%2Ft-mcgauley.github.io%2FPortfolio-Project-1%2F
+
+CSS 
+- No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/) 
+- validator results = https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ft-mcgauley.github.io%2FPortfolio-Project-1%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
+
+ 
+
+### Unfixed Bugs 
+
+ 
+
+So far through testing there have been no bugs which have not been fixed. Bugs which needed to be fixed during the development included incorrect media queries and google map embedded issues.  
+
+ 
+
+## Deployment  
+
+ 
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows:  
+
+- In the GitHub repository, navigate to the Settings tab  
+
+- From the source section drop-down menu, select the Master Branch 
+
+- Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.  
+
+ 
+
+The live link can be found here - https://t-mcgauley.github.io/Portfolio-Project-1/
+
+ 
+
+## Credits  
+
+- Gallery collage section code was inspired by the love running project gallery page.
+- Book in form code was found at https://codepen.io/tutsplus/pen/wNaGjy and modified to fit the required topic.
+- Media query help  https://www.youtube.com/watch?v=P_vkS4UJNDk
+- overall html css guide https://www.youtube.com/watch?v=UB1O30fR-EE
+ 
+
+ 
+
+ 
+
+### Content  
+
+- The icons used are from [Font Awesome](https://fontawesome.com/) 
+- The fonts used are from [Google fonts](https://fonts.google.com/)
+ 
+
+### Media 
+
+- Images used have been downloaded from [Pexels](https://www.pexels.com/)
+
+ 
+
