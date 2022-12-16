@@ -247,8 +247,6 @@ form {
   @media screen and (max-width:800px) {
       #photos {
           column-count: 2;}
-     
-      p{text-align:centre;}
        }
   @media screen and (min-device-width: 560px)
         {
