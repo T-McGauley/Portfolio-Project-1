@@ -284,6 +284,8 @@ form {
                .form {
                 width: 300px;
                 height: 400px;}
+                p{font-size: 1rem;}
+                #menu{font-size: 0.3rem;}
            }
       /* flex*/
       #menu{
