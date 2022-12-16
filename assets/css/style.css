@@ -20,7 +20,10 @@ body {
     }
 #menu li {float: right;
     list-style:none;
-    margin-right: 20px;}
+    margin-right: 20px;
+    font-size: 1.5rem;
+    font-family:'fredoka one', 'Arial Narrow', Arial, sans-serif;color: #534e45 ; 
+    text-transform: uppercase;}
 #menu a {text-decoration:none;
     color: inherit;}
 h2{font-family:'fredoka one', 'Arial Narrow', Arial, sans-serif;color: #534e45 ; text-transform: uppercase;}
@@ -33,7 +36,7 @@ h2{font-family:'fredoka one', 'Arial Narrow', Arial, sans-serif;color: #534e45 ;
   max-width: 100vw;
     width: 100%;
     overflow: hidden;
-    position:center;}    
+    }    
 #hero-image {height: 100%;
     width: 100%;
     background:url('../images/sleeping-cat-hero.jpg')
@@ -62,7 +65,7 @@ div>h2{font-size: 4rem;
 p {font-family:'fredoka', 'Arial Narrow', Arial, sans-serif;
     font-size:300% ;
     color: #3a3a3a;}
-section>h2{float:left 50%;}
+section>h2{float:left;}
 #about-us{padding-left: 100px;
 padding-right: 100px;
 padding-bottom: 50px;
